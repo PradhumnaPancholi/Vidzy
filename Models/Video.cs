@@ -11,5 +11,6 @@ namespace Vidzy.Models
         public int Id { get; set; }
         public String Name { get; set; }
         public DateTime ReleaseDate { get; set; }
+        public IList<Genre> Genres { get; set; }
     }
 }

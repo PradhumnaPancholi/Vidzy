@@ -49,6 +49,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201905062250264_InitialModelling.cs" />
+    <Compile Include="Migrations\201905062250264_InitialModelling.Designer.cs">
+      <DependentUpon>201905062250264_InitialModelling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905090551056_EstablishMToMRelationBtwnVideoAndGenre.cs" />
+    <Compile Include="Migrations\201905090551056_EstablishMToMRelationBtwnVideoAndGenre.Designer.cs">
+      <DependentUpon>201905090551056_EstablishMToMRelationBtwnVideoAndGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905090559513_RevertBackVideoGenresTable.cs" />
+    <Compile Include="Migrations\201905090559513_RevertBackVideoGenresTable.Designer.cs">
+      <DependentUpon>201905090559513_RevertBackVideoGenresTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905090603135_AddVideosFiledInGenreTable.cs" />
+    <Compile Include="Migrations\201905090603135_AddVideosFiledInGenreTable.Designer.cs">
+      <DependentUpon>201905090603135_AddVideosFiledInGenreTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905090607051_AddGenresFieldInVideosTable.cs" />
+    <Compile Include="Migrations\201905090607051_AddGenresFieldInVideosTable.Designer.cs">
+      <DependentUpon>201905090607051_AddGenresFieldInVideosTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Video.cs" />
@@ -59,6 +79,23 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201905062250264_InitialModelling.resx">
+      <DependentUpon>201905062250264_InitialModelling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905090551056_EstablishMToMRelationBtwnVideoAndGenre.resx">
+      <DependentUpon>201905090551056_EstablishMToMRelationBtwnVideoAndGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905090559513_RevertBackVideoGenresTable.resx">
+      <DependentUpon>201905090559513_RevertBackVideoGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905090603135_AddVideosFiledInGenreTable.resx">
+      <DependentUpon>201905090603135_AddVideosFiledInGenreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905090607051_AddGenresFieldInVideosTable.resx">
+      <DependentUpon>201905090607051_AddGenresFieldInVideosTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
